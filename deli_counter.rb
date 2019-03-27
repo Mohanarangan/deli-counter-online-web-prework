@@ -1,5 +1,5 @@
 # Write your code here.
-
+require 'pry'
 def line(names)
   if names == [] 
   puts "The line is currently empty."
@@ -15,6 +15,7 @@ def line(names)
 end
 
 def take_a_number(katz_deli, name)
+  binding.pry
   katz_deli.push(name)
   position = katz_deli.index(name)
   puts "Welcome, #{name}. You are number #{katz_deli.index(name)+1} in line." 
